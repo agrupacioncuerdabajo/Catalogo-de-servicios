@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Catalog</title>
+    <title>Catalogo de servicios</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -168,7 +168,7 @@
             for (let i = 1; i <= totalPages; i++) {
                 const pageBtn = document.createElement('button');
                 pageBtn.textContent = i;
-                pageBtn.className = `px-4 py-2 mx-1 ${i === currentPage ? 'bg-blue-500 text-white' : 'bg-white dark:bg-gray-700 dark:text-gray-300 text-gray-800'} rounded-lg shadow-md`;
+                pageBtn.className = `px-4 py-2 mx-1 ${i === currentPage ? 'bg-slate-800 text-white' : 'bg-white dark:bg-gray-700 dark:text-gray-300 text-gray-800'} rounded-lg shadow-md`;
                 pageBtn.addEventListener('click', () => {
                     currentPage = i;
                     displayServices();
